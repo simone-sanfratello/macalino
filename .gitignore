@@ -1,0 +1,22 @@
+# dirs
+/.vscode/
+/dist/
+/log/
+/pid/
+/node_modules/
+/coverage/
+
+# logs
+*.log
+*tgz
+/package-lock.json
+
+# sys and temp files
+*Thumbs.db
+*.DS_Store
+*._*
+.*.swp
+.~*
+.nyc_output
+
+package-lock.json

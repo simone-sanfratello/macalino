@@ -1,0 +1,50 @@
+{
+  "name": "macalino",
+  "version": "0.1.0-alpha",
+  "description": "Javascript task runner full optionals",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "settings/"
+  ],
+  "engines": {
+    "node": ">= 12"
+  },
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "a-toolbox": "^1.7.3",
+    "peppino": "^0.1.1-alpha",
+    "superstruct": "^0.8.3"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jest": "^26.0.1"
+  },
+  "author": "Simone Sanfratello <simone@braceslab.com>",
+  "license": "MIT",
+  "keywords": [
+    "task",
+    "orchestration",
+    "runner"
+  ],
+  "standard": {
+    "globals": [
+      "describe",
+      "test",
+      "expect"
+    ],
+    "ignore": [
+      "/debug/",
+      "/test/"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  }
+}
